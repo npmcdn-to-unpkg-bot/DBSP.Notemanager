@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AngularJS - Ex06- Custom Component Composition</title>
+  <!--<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Let's try something interesting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body ng-app="dbspNoteManager">
+  
+  <dbsp-note-list category="Books"></dbsp-note-list>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://npmcdn.com/@angular/router@0.2.0/angular1/angular_1_router.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="dbspNoteManager.module.js"></script>
+  <script src="dbspBookManager.module.js"></script>
+  <script src="dbspNoteList.component.js"></script>
+  <script src="dbspNote.component.js"></script>
+</body>
+
+</html>
